@@ -1,0 +1,8 @@
+<% @post_images.each do |post_image| %>
+<div>
+  <%= attachment_image_tag post_image, :image %>
+  <p>Name：<%= post_image.user.name %></p>
+  <p>Image：<%= image_tag('no_image.jpg') %></p>
+  <p>Introduction：<%= post_image.caption %></p>
+</div>
+<% end %>
